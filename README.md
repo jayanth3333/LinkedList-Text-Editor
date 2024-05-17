@@ -29,7 +29,7 @@ You can start typing in the text area, and use the following buttons :
 
 ## How it Works
 
-This text editor stores text using a doubly linked list data structure. Each node represents a single character and has a reference to the next and previous nodes. The cursor position is tracked by the current node. When a user types a character, a new node is inserted after the current node and the current node is updated. When a user deletes a character, the current node is updated to the previous node. The editing history is tracked using a stack. When an editing operation is performed, the current state is pushed onto the stack. To undo an operation, the previous state is popped from the stack and restored.
+This text editor employs a doubly linked list to store text, with each node representing a single character and containing references to both the next and previous nodes. The cursor position is tracked by the current node. When a user types a character, a new node is inserted after the current node, and the current node is then updated to this new node. If a user deletes a character, the current node is updated to the previous node. The editor also maintains an editing history using a stack. Each time an editing action is performed, the current state of the text is pushed onto the stack. To undo an operation, the previous state is popped from the stack and restored.
 
 ## Acknowledgments
 
